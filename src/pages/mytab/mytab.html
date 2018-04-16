@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     MyTab
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="containers">
+<div class="card">
+<h4>Bonjour {{name}}</h4>
+Nom : <input [(ngModel)]="name" type="text" placeholder="Saisir votre nom">
+<button class="bout" ion-button block (click)="presentToast('top'); name=''">Valider</button>
+</div>
+<h2>Mes Sauvegardes</h2>
+<ul class="prenom">
+  <li *ngFor="let user of users">
+  </li>
+</ul>
+
+</ion-content>
